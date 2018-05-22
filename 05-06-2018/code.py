@@ -26,5 +26,5 @@ def longest_substr(s, k):
     if len(longest) < len(substr): longest = substr
   return longest
 
-print(longest_substr("abcba", 2) is 'bcb')
-print(longest_substr("bbbbbcba", 2) is 'bbbbbcb')
+print(longest_substr("abcba", 2) == 'bcb')
+print(longest_substr("bbbbbcba", 2) == 'bbbbbcb')

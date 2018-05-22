@@ -10,7 +10,7 @@ def balanced_brackets(inp):
     else:
       # if character (c) is closing bracket and last item in stack is opening of same
       # style bracket, remove opening from stack
-      if (s[-1] is "[" and c is "]") or (s[-1] is "{" and c is "}") or (s[-1] is "(" and c is ")"): s.pop()
+      if (s[-1] == "[" and c == "]") or (s[-1] == "{" and c == "}") or (s[-1] == "(" and c == ")"): s.pop()
       # if character is new opening, add to stack
       elif c in opening: s.append(c)
       # if character is not opening (closing) and is not paired with an opening,
